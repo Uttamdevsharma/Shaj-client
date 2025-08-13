@@ -1,16 +1,34 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductCards from '../shop/ProductCards'
-import products from "../../data/products.json"
+// import products from "../../data/products.json"
+import { useFetchAllProdutsQuery } from '../../redux/features/products/productsApi';
+import Loading from '../../components/Loading';
 
 const CategoryPage = () => {
     const {categoryName} = useParams();
-    const [filteredProducts, setFilteredProducts] = useState([])
+    console.log("Category name from URL:", categoryName);
+    console.log("Category name sent to API:", categoryName.toLowerCase());
+    // const [filteredProducts, setFilteredProducts] = useState([])
 
-    useEffect(()=> {
-        const filtered =  products.filter((product) => product.category === categoryName.toLowerCase());
-        setFilteredProducts(filtered)
-    }, [])
+    const { data: productsData = {}, error, isLoading } = useFetchAllProdutsQuery({
+        category: categoryName.toLowerCase(),
+        color: '',
+        minPrice: '',
+        maxPrice: '',
+        page: 1,
+        limit: 100
+    });
+
+    if (isLoading) return <Loading />;
+    if (error) return <div>Error loading products!</div>;
+
+    const products = productsData?.data?.products || [];
+
+    // useEffect(()=> {
+    //     const filtered =  products.filter((product) => product.category === categoryName.toLowerCase());
+    //     setFilteredProducts(filtered)
+    // }, [categoryName])
   
   return (
     <>
@@ -21,7 +39,11 @@ const CategoryPage = () => {
 
         {/* Products card */}
         <div className='section__container'>
-        <ProductCards products={filteredProducts}/>
+        {products.length > 0 ? (
+            <ProductCards products={products}/>
+        ) : (
+            <p className='text-center text-lg'>No products found in this category.</p>
+        )}
         </div>
     </>
   )

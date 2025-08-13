@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom'
 
 const Categories = () => {
     const categories = [
-        { id: 1, name: "Accessories", path: 'accessories', image: category1 },
-        { id: 2, name: "Dress Collection", path: 'dress', image: category2 },
-        { id: 3, name: "Jewellery", path: 'jewellery', image: category3 },
-        { id: 4, name: "Cosmetics", path: 'cosmetics', image: category4 },
+        { id: 1, name: "Formal Dress", path: 'formal dress', image: category1 },
+{ id: 2, name: "Casual Dress", path: 'casual dress', image: category2 },
+{ id: 3, name: "Sports Dress", path: 'sports dress', image: category3 },
+{ id: 4, name: "Grooming", path: 'grooming', image: category4 },
     ]
     return (
         <section className="product__grid">

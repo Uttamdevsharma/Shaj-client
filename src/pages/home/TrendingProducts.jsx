@@ -13,7 +13,7 @@ const TrendingProducts = () => {
     return (
         <section className='section__container product__container'>
             <h2 className='section__header'>Trending Products</h2>
-            <p className='section__subheader'>Discover the Hottest Picks: Elevate Your Style with Our Curated Collection of Trending Women's Fashion Products.
+            <p className='section__subheader'>Discover the Hottest Picks: Elevate Your Style with Our Curated Collection of Trending Men's Fashion Products.
             </p>
 
             {/* products card */}

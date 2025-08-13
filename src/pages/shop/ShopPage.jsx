@@ -7,7 +7,7 @@ import Loading from '../../components/Loading'
 
 const filters = 
   {
-    categories: ["all", "accessories", "dress", "jewellery", "cosmetics"],
+    categories: ["all", "formal dress", "casual dress", "sports dress", "grooming"],
     colors: ['all', 'black', 'red', 'gold', 'blue', 'silver', 'beige', 'green'],
     priceRanges: [
       {label: "Under $50", min: 0, max: 50},

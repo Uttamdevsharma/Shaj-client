@@ -81,7 +81,6 @@ nav {
 }
 
 .nav__links {
-  flex: 1;
   list-style: none;
   display: flex;
   align-items: center;
@@ -116,6 +115,10 @@ nav {
   color: var(--primary-color);
 }
 
+.nav__logo {
+  margin-right: 2rem;
+}
+
 .nav__icons {
   flex: 1;
   display: flex;
@@ -130,6 +133,18 @@ nav {
 }
 
 .nav__icons span a:hover {
+  color: var(--primary-color);
+}
+
+.login-icon {
+  padding: 5px;
+  border: 1px solid var(--text-light);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.login-icon:hover {
+  border-color: var(--primary-color);
   color: var(--primary-color);
 }
 
@@ -168,16 +183,19 @@ nav {
 }
 
 .header__image {
-  position: relative;
+  /* position: relative; */
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__image img {
-  position: absolute;
-  left: 50%;
-  bottom: -5rem;
-  transform: translateX(-50%);
-  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 .categories__grid {
@@ -194,12 +212,14 @@ nav {
 }
 
 .categories__card img {
-  max-width: 100px;
+  max-width: 120px;
+  height: 120px;
   margin: auto;
   margin-bottom: 1rem;
-  border: 5px solid var(--white);
   border-radius: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  mix-blend-mode: multiply;
 }
 
 .categories__card h4 {
@@ -216,15 +236,18 @@ nav {
 }
 
 .hero__card {
-  position: relative;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .hero__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-15%, -50%);
+  flex: 1;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 .hero__content p {
@@ -247,7 +270,12 @@ nav {
 }
 
 .hero__card img {
-  border-radius: 5px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  mix-blend-mode: multiply;
+  flex-shrink: 0;
 }
 
 .product__grid {
@@ -301,16 +329,19 @@ nav {
 }
 
 .deals__image {
-  height: 100%;
-  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .deals__image img {
-  position: absolute;
-  left: 50%;
-  bottom: -5rem;
-  transform: translateX(-50%);
-  max-width: 550px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 140px;
 }
 
 .deals__content {

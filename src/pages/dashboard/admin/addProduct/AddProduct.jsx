@@ -7,10 +7,10 @@ import { useSelector } from 'react-redux';
 
 const categories = [
     { label: "Select Category", value: "" },
-    { label: "Accessories", value: "accessories" },
-    { label: "Dress", value: "dress" },
-    { label: "Jewellery", value: "jewellery" },
-    { label: "Cosmetics", value: "cosmetics" },
+    { label: "Formal Dress", value: "formal dress" },
+    { label: "Casual Dress", value: "casual dress" },
+    { label: "Sports Dress", value: "sports dress" },
+    { label: "Grooming", value: "grooming" },
 ]
 
 const colors = [

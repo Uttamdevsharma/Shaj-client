@@ -10,24 +10,24 @@ const Trends = () => {
         <div className="hero__card">
           <img src={card1} alt="Womens Shirt" />
           <div className="hero__content">
-            <p>2023 Trend</p>
-            <h4>Womens Shirt</h4>
+            <p>2025 Trend</p>
+            <h4>Men's Shirts</h4>
             <a href="#">Discover More +</a>
           </div>
         </div>
         <div className="hero__card">
           <img src={card2} alt="Womens Dresses" />
           <div className="hero__content">
-            <p>2023 Trend</p>
-            <h4>Womens Dresses</h4>
+            <p>2025 Trend</p>
+            <h4>Men's Formal Wear</h4>
             <a href="#">Discover More +</a>
           </div>
         </div>
         <div className="hero__card">
           <img src={card3} alt="Womens Casuals" />
           <div className="hero__content">
-            <p>2023 Trend</p>
-            <h4>Womens Casuals</h4>
+            <p>2025 Trend</p>
+            <h4>Men's Casuals</h4>
             <a href="#">Discover More +</a>
           </div>
         </div>

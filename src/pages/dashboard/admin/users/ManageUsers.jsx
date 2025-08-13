@@ -155,7 +155,7 @@ const ManageUsers = () => {
                     target="_blank"
                   >
                     {" "}
-                    Md Al Mamun
+                    Uttam Kumar Dev Sharma
                   </a>
                   .
                 </div>

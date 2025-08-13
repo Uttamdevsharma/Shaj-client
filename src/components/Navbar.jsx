@@ -63,6 +63,9 @@ const Navbar = () => {
                 className="max-w-screen-2xl mx-auto px-4 flex justify-between items-center"
             >
                 <ul className="nav__links">
+                    <li className="link nav__logo">
+                        <Link to="/">Shaj<span>.</span></Link>
+                    </li>
                     <li className="link">
                         <NavLink className={({ isActive, isPending }) =>
                         isActive ? "active" : ""
@@ -84,9 +87,6 @@ const Navbar = () => {
                          } to="/contact">Contact</NavLink>
                     </li>
                 </ul>
-                <div className="nav__logo">
-                    <Link to="/">Lebaba<span>.</span></Link>
-                </div>
                 <div className="nav__icons relative">
                     <span><Link to="/search"><i className="ri-search-line"></i></Link></span>
                     <span>
@@ -106,7 +106,7 @@ const Navbar = () => {
                             <>
                                 <img 
                                 onClick={handleDropDownToogle}
-                                 src={user?.profileImage || avatarImg} alt="" className='size-6 rounded-full cursor-pointer' />
+                                 src={user?.profileImage || avatarImg} alt="" className='size-6 rounded-full cursor-pointer login-icon' />
                                 {
                                     isDropDownOpen && (
                                         <div 
@@ -132,7 +132,7 @@ const Navbar = () => {
                                     )
                                 }
 
-                            </> :  <Link to="/login"> < i className="ri-user-line rounded-full cursor-pointer"></i></Link>
+                            </> :  <Link to="/login"> < i className="ri-user-line rounded-full cursor-pointer login-icon"></i></Link>
                          }
                         
                        

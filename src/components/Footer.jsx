@@ -18,18 +18,18 @@ const Footer = () => {
                         <span>
                             <i className="ri-map-pin-2-fill"></i>
                         </span>
-                            123, London Bridge
-                        Street, London
+                        123, Kanchan Rupganj, Narayanganj, Bangladesh
+
                     </p>
                     <p>
                         <span>
                             <i className="ri-mail-fill"></i>
                         </span>
-                        support@Lebaba.com
+                        Sajh123@gmail.com
                     </p>
                     <p>
                         <span><i className="ri-phone-fill"></i></span>
-                        (+012) 3456 789
+                        +8801701560326
                     </p>
                 </div>
                 <div className="footer__col">
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="footer__bar">
-                Copyright © 2025 Web Design Mastery. All rights reserved.
+            <p>Copyright © 2025 <strong>Shaj</strong>. All rights reserved.</p>
             </div>
             
     </>
