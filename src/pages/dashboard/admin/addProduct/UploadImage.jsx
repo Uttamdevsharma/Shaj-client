@@ -36,7 +36,7 @@ const UploadImage = ({name, setImage, label, id, value}) => {
             }).then(() => setLoading(false)).catch((error) => {
                 console.error("Failed to upload image", error);
                 setLoading(false);
-                alert("Failed to upload image, please try again!")
+                alert("Failed to upload image, please try again!", error.message)
             })
         
     }
